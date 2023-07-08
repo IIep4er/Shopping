@@ -155,4 +155,9 @@ public class OldCheckoutPages {
         return this;
     }
 
+    public OldCheckoutPages orderCreationCheck() {
+        $(By.cssSelector(".heading")).shouldBe(text("Отлично! Заказ создан"));  // todo придумать название и вынести в селенид элемент
+        return this;
+    }
+
 }
