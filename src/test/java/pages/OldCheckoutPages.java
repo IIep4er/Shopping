@@ -4,9 +4,9 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.Keys;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.*;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -38,10 +38,19 @@ public class OldCheckoutPages {
             setCVV = $("[name=\"cvv\"]"),
             paymentEmail = $("#email[name=\"email\"]"),
             pay = $(".confirm-button");
+
+    @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
+    public byte[] takeScreenshot() {
+        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
+    }
+
+    @Step("Открываем страницу для женщин")
     public void openPageForGirl() {
 
         open("/c/dlya-zhenshchin");
     }
+
+    @Step("Устанавливаем куку старого чекаута")
     public void addCookiesOldCheckout(String name, String value) {
         Selenide.clearBrowserCookies();
         var cookie = new Cookie(name, value);
@@ -49,31 +58,41 @@ public class OldCheckoutPages {
         Selenide.refresh();
     }
 
+    @Step("Закрываем поп ап согласия куки")
     public void closePopUpCookies() {
 
         $((".confirm-message__button-block")).click();
     }
+
+    @Step("Открываем рандомную карточку товара")
 
     public OldCheckoutPages openProductCard(int value) {
         $$(".yCmsContentSlot .img").get(value-1).click();
         return this;
     }
 
+    @Step("Нажамаем кнопку В корзину ")
     public OldCheckoutPages addToBasket() {
         $("[data-js=\"button-add-to-cart-block\"]").$(byText("В корзину")).shouldHave(visible);
         $("[data-js=\"button-add-to-cart-block\"]").click();
         return this;
     }
 
+    @Step("Открываем корзину")
+
     public OldCheckoutPages openBasket() {
         basket.click();
         return this;
     }
 
+    @Step("Нажамаем оформить заказ")
+
     public OldCheckoutPages checkout() {
         checkoutButton.click();
         return this;
     }
+
+    @Step("Вводим ФИО")
 
     public OldCheckoutPages setFIO(String lastName, String firstName, String middleName) {
         lastNameInput.setValue(lastName); //фамилия
@@ -82,15 +101,21 @@ public class OldCheckoutPages {
         return this;
     }
 
+    @Step("Вводим номер")
+
     public OldCheckoutPages setNumber(String value) {
         numberInput.setValue("9631113375");
         return this;
     }
 
+    @Step("Вводим Email")
+
     public OldCheckoutPages setEmail(String value) {
         emailInput.setValue(value);
         return this;
     }
+
+    @Step("Утанавливаем город ")
 
     public OldCheckoutPages setCity(String value) {
         cityInput.setValue(value);
@@ -101,21 +126,29 @@ public class OldCheckoutPages {
         return this;
     }
 
+    @Step("Выбираем способ доставки Постой России")
+
     public OldCheckoutPages setDeliveryMethodPost() {
         postDelivery.click();
         return this;
     }
+
+    @Step("Выбираем способ доставки Курьер")
 
     public OldCheckoutPages setDeliveryMethodCourier() {
         courierDelivery.click();
         return this;
     }
 
+    @Step("Выбираем способ доставки Пункт выдачи")
+
     public OldCheckoutPages setDeliveryMethodPickPoint() {
         selectPickPoint.click();
 
         return this;
     }
+
+    @Step("Вводим адрес")
 
     public OldCheckoutPages setAddress(String value) {
         addressInput.setValue(value);
@@ -126,17 +159,24 @@ public class OldCheckoutPages {
         return this;
     }
 
+    @Step("Выбираем оплату при получении")
+
     public OldCheckoutPages setPaymentModeCash() {
         paymentModeCash.shouldHave(visible);
         paymentModeCash.click();
         return this;
     }
 
+    @Step("Выбираем оплату картой")
+
     public OldCheckoutPages setPaymentModeCard() {
         paymentModeCard.shouldHave(visible);
         paymentModeCard.click();
         return this;
     }
+
+    @Step("Заполняем информацию для оплаты")
+
     public OldCheckoutPages setPaymentInfo(String numberCard, String dateCard, String cvv, String email) {
         paymentPopUp.shouldHave(visible);
         setNumberCard.setValue(numberCard);
@@ -150,14 +190,19 @@ public class OldCheckoutPages {
         return this;
     }
 
+    @Step("Нажимаем Оформить заказ")
+
     public OldCheckoutPages createOrder() {
         createOrder.click();
         return this;
     }
 
+    @Step("Проверяем, что заказ создан")
+
     public OldCheckoutPages orderCreationCheck() {
         $(By.cssSelector(".heading")).shouldBe(text("Отлично! Заказ создан"));  // todo придумать название и вынести в селенид элемент
         return this;
     }
+
 
 }

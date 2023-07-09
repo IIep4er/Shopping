@@ -1,9 +1,24 @@
 plugins {
     id 'java-library'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group = 'ru.shoppinglive'
 version = '1.0-SNAPSHOT'
+
+allure {
+    report {
+        version.set("2.19.0")
+    }
+    adapter { // отвечает за появление папочки build/allure-results
+        aspectjWeaver.set(true) //обработка аннотации @Step
+        frameworks {
+            junit5 { //название фреймворка
+                adapterVersion.set("2.19.0") //версия интеграции фреймворка и Allure
+            }
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -18,10 +33,11 @@ compileTestJava {
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation("com.codeborne:selenide:6.15.0")
-    testImplementation("org.slf4j:slf4j-simple:2.0.7")
-    testImplementation("com.github.javafaker:javafaker:1.0.2")
+    testImplementation 'org.junit.jupiter:junit-jupiter',
+            'com.codeborne:selenide:6.16.0',
+            'org.slf4j:slf4j-simple:2.0.7',
+            'com.github.javafaker:javafaker:1.0.2',
+            'io.qameta.allure:allure-selenide:2.23.0'
 }
 
 test {
