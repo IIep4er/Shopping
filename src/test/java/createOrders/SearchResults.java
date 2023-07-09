@@ -26,7 +26,6 @@ public class SearchResults extends TestBase {
     void checkingTheCorrectionOfSearchResults2(String value1, String value2) {
         SelenideLogger.addListener("allure", new AllureSelenide());
         searchResultsPages.openMainPage();
-
         searchResultsPages.inputWord(value1)
                 .checkSearchResult(value2);
     }
