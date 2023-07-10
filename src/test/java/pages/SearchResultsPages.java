@@ -16,7 +16,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchResultsPages {
     private SelenideElement
             searchString = $("#site-search-input"),
-            searchResult = $("div.digi-products-grid_horde");
+            searchResult = $("div.digi-products-grid_horde"),
+            searchButton = $(".field-search__submit-btn");
 
     @Step("Открываем главную страницу")
     public void openMainPage() {
@@ -28,14 +29,15 @@ public class SearchResultsPages {
     @Step("Вводим искомое слово") //todo разобраться, как подцепить в название конкретное слово
 
     public SearchResultsPages inputWord(String value) {
-        searchString.setValue(value).pressEnter();
+        searchString.setValue(value);
+        searchButton.click();
         return this;
     }
 
     @Step("Проверяем, что в предлженной выдаче есть искомый товар ") //todo разобраться, как подцепить в название конкретное слово
 
     public SearchResultsPages checkSearchResult(String value) {
-        searchResult.shouldBe(text(value));
+        searchResult.shouldHave(text(value));
         return this;
     }
 

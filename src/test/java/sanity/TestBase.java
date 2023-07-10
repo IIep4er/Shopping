@@ -1,14 +1,26 @@
-package createOrders;
+package sanity;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
-import pages.OldCheckoutPages;
-import pages.SearchResultsPages;
+import org.openqa.selenium.Cookie;
+import pages.*;
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class TestBase {
-    OldCheckoutPages oldCheckoutPages = new OldCheckoutPages();
-    SearchResultsPages searchResultsPages = new SearchResultsPages();
+    OldCheckoutPages oldCheckout = new OldCheckoutPages();
+    SearchResultsPages searchResults = new SearchResultsPages();
+    ListingPages listing = new ListingPages();
+    HeaderPages header = new HeaderPages();
+    BasketPages basket = new BasketPages();
+    ProductCardPages productCard = new ProductCardPages();
+    CookiePages cookie = new CookiePages();
+
     Faker faker = new Faker();
 
     String CookieName = "abtc-new-checkout-mode_1",
@@ -28,10 +40,11 @@ public class TestBase {
     @BeforeAll
     static void config() {
 
-        Configuration.pageLoadStrategy = "eager"; //�������� �������� �������� - ������������
+        Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru";
-        Configuration.timeout = 60000;
+        Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
+        Configuration.timeout = 10000;
 
     }
+
 }

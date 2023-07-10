@@ -16,8 +16,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class OldCheckoutPages {
     private SelenideElement
-            basket = $(".header-body__right-block [href=\"/cart\"]"),
-            checkoutButton = $(By.cssSelector("[data-js=\"button-apply-order\"]")),
+
             lastNameInput = $("[name=\"lastName\"]"),
             firstNameInput = $("[name=\"firstName\"]"),
             middleNameInput = $("[name=\"middleName\"]"),
@@ -42,54 +41,6 @@ public class OldCheckoutPages {
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
     public byte[] takeScreenshot() {
         return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
-    }
-
-    @Step("Открываем страницу для женщин")
-    public void openPageForGirl() {
-
-        open("/c/dlya-zhenshchin");
-    }
-
-    @Step("Устанавливаем куку старого чекаута")
-    public void addCookiesOldCheckout(String name, String value) {
-        Selenide.clearBrowserCookies();
-        var cookie = new Cookie(name, value);
-        WebDriverRunner.getWebDriver().manage().addCookie(cookie);
-        Selenide.refresh();
-    }
-
-    @Step("Закрываем поп ап согласия куки")
-    public void closePopUpCookies() {
-
-        $((".confirm-message__button-block")).click();
-    }
-
-    @Step("Открываем рандомную карточку товара")
-
-    public OldCheckoutPages openProductCard(int value) {
-        $$(".yCmsContentSlot .img").get(value-1).click();
-        return this;
-    }
-
-    @Step("Нажамаем кнопку В корзину ")
-    public OldCheckoutPages addToBasket() {
-        $("[data-js=\"button-add-to-cart-block\"]").$(byText("В корзину")).shouldHave(visible);
-        $("[data-js=\"button-add-to-cart-block\"]").click();
-        return this;
-    }
-
-    @Step("Открываем корзину")
-
-    public OldCheckoutPages openBasket() {
-        basket.click();
-        return this;
-    }
-
-    @Step("Нажамаем оформить заказ")
-
-    public OldCheckoutPages checkout() {
-        checkoutButton.click();
-        return this;
     }
 
     @Step("Вводим ФИО")
