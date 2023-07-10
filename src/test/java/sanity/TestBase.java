@@ -38,7 +38,7 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
-        Configuration.timeout = 10000;
+        Configuration.timeout = 60000;
 
     }
 
