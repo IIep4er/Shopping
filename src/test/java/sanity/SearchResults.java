@@ -19,8 +19,8 @@ public class SearchResults extends TestBase {
     @DisplayName("Проверка исправления результатов поиска.")
     void checkingTheCorrectionOfSearchResults2(String value1, String value2) {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        searchResults.openMainPage();
-        searchResults.inputWord(value1)
+        search.openMainPage();
+        search.inputWord(value1)
                 .checkSearchResult(value2);
     }
 

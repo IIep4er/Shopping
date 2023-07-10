@@ -1,20 +1,15 @@
 package sanity;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import com.github.javafaker.Faker;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.Cookie;
 import pages.*;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class TestBase {
     OldCheckoutPages oldCheckout = new OldCheckoutPages();
-    SearchResultsPages searchResults = new SearchResultsPages();
+    SearchPages search = new SearchPages();
     ListingPages listing = new ListingPages();
     HeaderPages header = new HeaderPages();
     BasketPages basket = new BasketPages();
