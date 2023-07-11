@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 public class OldCheckout extends TestBase {
     @Test
-    @Disabled
+    //@Disabled
     @Feature("Старый чекаут")
     @Story("Успешное оформление заказа")
     @Owner("Ofitserov")
@@ -47,7 +47,7 @@ public class OldCheckout extends TestBase {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     @Feature("Старый чекаут")
     @Story("Успешное оформление заказа")
     @Owner("Ofitserov")
@@ -84,7 +84,7 @@ public class OldCheckout extends TestBase {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     @Feature("Старый чекаут")
     @Story("Успешное оформление заказа")
     @Owner("Ofitserov")

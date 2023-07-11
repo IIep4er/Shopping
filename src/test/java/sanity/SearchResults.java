@@ -7,6 +7,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 public class SearchResults extends TestBase {
 
     @CsvFileSource(resources = "/searchValues.csv")
@@ -17,7 +19,7 @@ public class SearchResults extends TestBase {
     @Severity(SeverityLevel.MINOR)
     @Link(value = "US", url = "https://confluence.shoppinglive.local/")
     @DisplayName("Проверка исправления результатов поиска.")
-    void checkingTheCorrectionOfSearchResults2(String value1, String value2) {
+    void checkingTheCorrectionOfSearchResults(String value1, String value2) {
         SelenideLogger.addListener("allure", new AllureSelenide());
         openMainPage();
         search.inputWord(value1)
