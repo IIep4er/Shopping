@@ -5,7 +5,12 @@ import com.github.javafaker.Faker;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.*;
+
+import java.net.URI;
+import java.util.Map;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.$;
@@ -44,9 +49,20 @@ public class TestBase {
     static void config() {
 
         Configuration.pageLoadStrategy = "eager";
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "100.0";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
         Configuration.timeout = 10000;
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
+        Configuration.browserCapabilities = capabilities;
 
     }
 
