@@ -44,3 +44,9 @@ test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+
+task sanity_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("sanity")
+    }
+}
