@@ -2,10 +2,13 @@ package sanity;
 
 import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
 import pages.*;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
     OldCheckoutPages oldCheckout = new OldCheckoutPages();
@@ -15,6 +18,8 @@ public class TestBase {
     BasketPages basket = new BasketPages();
     ProductCardPages productCard = new ProductCardPages();
     CookiePages cookie = new CookiePages();
+    AuthorizationPages authorization = new AuthorizationPages();
+    MyProfilePages myProfile = new MyProfilePages();
 
     Faker faker = new Faker();
 
@@ -24,7 +29,8 @@ public class TestBase {
             firstName = "Кирилл",
             middleName = "Олегович",
             number = "9631113375",
-            email = "ki@ri.ru",
+            email = "kofitserov@shoppinglive.ru",
+            password = "password1234",
             city = "Москва",
             address = "ракетный 12",
             numberCard = "4242424242424242",
@@ -38,8 +44,14 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
-        Configuration.timeout = 60000;
+        Configuration.timeout = 10000;
 
+    }
+
+    @Step("Открываем главную страницу")
+    public void openMainPage() {
+
+        open(baseUrl);
     }
 
 }

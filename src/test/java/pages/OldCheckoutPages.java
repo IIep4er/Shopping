@@ -148,7 +148,7 @@ public class OldCheckoutPages {
         return this;
     }
 
-    @Step("Проверяем, что заказ создан")
+    @Step("Проверяем, что заказ создан") //todo вынести в отдельный ThanksPage
 
     public OldCheckoutPages orderCreationCheck() {
         $(By.cssSelector(".heading")).shouldBe(text("Отлично! Заказ создан"));  // todo придумать название и вынести в селенид элемент

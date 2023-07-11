@@ -19,7 +19,7 @@ public class SearchResults extends TestBase {
     @DisplayName("Проверка исправления результатов поиска.")
     void checkingTheCorrectionOfSearchResults2(String value1, String value2) {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        search.openMainPage();
+        openMainPage();
         search.inputWord(value1)
                 .checkSearchResult(value2);
     }

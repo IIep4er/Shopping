@@ -19,11 +19,6 @@ public class SearchPages {
             searchResult = $("div.digi-products-grid_horde"),
             searchButton = $(".field-search__submit-btn");
 
-    @Step("Открываем главную страницу")
-    public void openMainPage() {
-
-        open(baseUrl);
-    }
 
 
     @Step("Вводим искомое слово") //todo разобраться, как подцепить в название конкретное слово
