@@ -85,6 +85,7 @@ public class OldCheckout extends TestBase {
                 .takeScreenshot();
     }
 
+
     @Test
     @Disabled
     @Feature("Старый чекаут")
