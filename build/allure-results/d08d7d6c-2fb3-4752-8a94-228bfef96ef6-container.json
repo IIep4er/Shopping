@@ -1,1 +1,0 @@
-{"uuid":"d08d7d6c-2fb3-4752-8a94-228bfef96ef6","name":"Authorization","children":["775fdc5d-e04e-4c7d-a118-fe1f30c74478"],"befores":[{"name":"config","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1689083782602,"stop":1689083782621}],"afters":[],"start":1689083782563,"stop":1689083799745}
