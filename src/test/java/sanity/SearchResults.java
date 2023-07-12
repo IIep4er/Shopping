@@ -22,7 +22,6 @@ public class SearchResults extends TestBase {
     @Link(value = "US", url = "https://confluence.shoppinglive.local/")
     @DisplayName("Проверка исправления результатов поиска.")
     void checkingTheCorrectionOfSearchResults(String value1, String value2) {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         openMainPage();
         search.inputWord(value1)
                 .checkSearchResult(value2);

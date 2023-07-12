@@ -20,8 +20,6 @@ public class OldCheckout extends TestBase {
     @DisplayName("Оформление заказа с доставкой почтой России и наложенным платежом")
     void successfulOrderWithDeliveryPost() {
 
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         listing.openPageForGirl();
 
         cookie.addCookiesOldCheckout(CookieName, CookieValue)
@@ -58,8 +56,6 @@ public class OldCheckout extends TestBase {
     @DisplayName("Оформление заказа с доставкой курьером и наложенным платежом")
     void successfulOrderWithDeliveryCourier() {
 
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         listing.openPageForGirl();
 
         cookie.addCookiesOldCheckout(CookieName, CookieValue)
@@ -95,8 +91,6 @@ public class OldCheckout extends TestBase {
     @Link(value = "US", url = "https://confluence.shoppinglive.local/")
     @DisplayName("Оформление заказа с доставкой курьером и оплатой картой")
     void successfulOrderWithDeliveryCourierPayCard() {
-
-        SelenideLogger.addListener("allure", new AllureSelenide());
 
         listing.openPageForGirl();
 

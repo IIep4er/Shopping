@@ -20,7 +20,6 @@ public class Authorization extends TestBase {
     @Link(value = "US", url = "https://confluence.shoppinglive.local/")
     @DisplayName("Успешная авторизация через почту/пароль")
     void successfulAuthorizationWithEmailAndPassword() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         openMainPage();
         header.clickLogin();
         authorization.clickLoginForEmail()
