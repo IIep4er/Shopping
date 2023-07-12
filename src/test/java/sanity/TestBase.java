@@ -53,12 +53,12 @@ public class TestBase {
     static void config() {
 
         Configuration.pageLoadStrategy = "eager";
-        //Configuration.browser = "chrome";
-        //Configuration.browserVersion = "100.0";
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "100.0";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
         Configuration.timeout = 10000;
-        /*.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -66,7 +66,7 @@ public class TestBase {
                 "enableVNC", true,
                 "enableVideo", true
         ));
-        Configuration.browserCapabilities = capabilities;*/
+        Configuration.browserCapabilities = capabilities;
 
     }
 
