@@ -40,10 +40,11 @@ dependencies {
             'io.qameta.allure:allure-selenide:2.23.0'
 }
 
-test {
-    useJUnitPlatform()
+tasks.withType(Test) {
     systemProperties(System.getProperties())
+    useJUnitPlatform()
 }
+
 
 task sanity_test(type: Test) {
     useJUnitPlatform {
