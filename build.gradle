@@ -50,3 +50,9 @@ task sanity_test(type: Test) {
         includeTags("sanity")
     }
 }
+
+task search_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("search")
+    }
+}

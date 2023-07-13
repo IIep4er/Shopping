@@ -54,7 +54,7 @@ public class TestBase {
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
+        Configuration.browserVersion = System.getProperty("version", "100.0");
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
         Configuration.timeout = 10000;
