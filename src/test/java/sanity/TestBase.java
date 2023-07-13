@@ -78,6 +78,7 @@ public class TestBase {
     @AfterEach
         void addAttachments() {
             Attach.browserConsoleLogs();
+            Attach.screenshotAs("Last screenshot");
         }
 
 
