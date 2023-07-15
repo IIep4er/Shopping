@@ -28,6 +28,7 @@ public class SearchResults extends TestBase {
     @DisplayName("Проверка исправления результатов поиска.")
     void checkingTheCorrectionOfSearchResults(String value1, String value2) {
         openMainPage();
+        sleep(5000); //todo придумать нормальное ожидание
         search.inputWord(value1)
                 .checkSearchResult(value2);
     }
