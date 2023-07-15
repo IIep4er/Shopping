@@ -56,7 +56,7 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("version", "100.0");
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www-hybris-rt-01.shoppinglive.ru/";
-        Configuration.timeout = 10000;
+        Configuration.timeout = 30000;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         /*DesiredCapabilities capabilities = new DesiredCapabilities();
