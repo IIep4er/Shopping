@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": "Shoppinglive",
+    "environment": "RT-01",
+    "comment": "any comment here, @kofitserov",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "build/reports/allure-report/allureReport",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6291620270:AAEC4SatpHGLxw9Dtbt9Ck5BPlRz6hLFcrQ",
+    "chat": "-1001925186345",
+    "replyTo": ""
+  }
+}
