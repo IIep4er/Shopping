@@ -5,7 +5,7 @@
     "environment": "RT-01",
     "comment": "any comment here, @kofitserov",
     "reportLink": "",
-    "language": "en",
+    "language": "ru",
     "allureFolder": "allure-report/allureReport",
     "enableChart": true
   },
