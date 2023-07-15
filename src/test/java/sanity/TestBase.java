@@ -59,13 +59,13 @@ public class TestBase {
         Configuration.timeout = 30000;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
-        /*DesiredCapabilities capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
-                "enableVideo", false
+                "enableVideo", true
         ));
-        Configuration.browserCapabilities = capabilities;*/
+        Configuration.browserCapabilities = capabilities;
 
     }
 
@@ -78,6 +78,7 @@ public class TestBase {
         void addAttachments() {
             Attach.browserConsoleLogs();
             Attach.screenshotAs("Last screenshot");
+            Attach.addVideo();
         }
 
 
