@@ -20,7 +20,6 @@ import java.util.Map;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
-@Tag("sanity")
 public class TestBase {
     OldCheckoutPages oldCheckout = new OldCheckoutPages();
     SearchPages search = new SearchPages();
