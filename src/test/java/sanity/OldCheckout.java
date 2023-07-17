@@ -16,7 +16,7 @@ public class OldCheckout extends TestBase {
     @Story("Успешное оформление заказа")
     @Owner("Ofitserov")
     @Severity(SeverityLevel.BLOCKER)
-    @Link(value = "US", url = "https://confluence.shoppinglive.local/")
+    @Link(value = "US", url = "https://confluence.shoppinglive.local/") //todo добавить актуальную US
     @DisplayName("Оформление заказа с доставкой почтой России и наложенным платежом")
     void successfulOrderWithDeliveryPost() {
 
@@ -31,7 +31,7 @@ public class OldCheckout extends TestBase {
 
         header.openBasket();
 
-        basket.checkout();
+        basket.clickCheckout();
 
         oldCheckout.setFIO(lastName, firstName, middleName)
                 .setNumber(number)
@@ -67,7 +67,7 @@ public class OldCheckout extends TestBase {
 
         header.openBasket();
 
-        basket.checkout();
+        basket.clickCheckout();
 
         oldCheckout.setFIO(lastName, firstName, middleName)
                 .setNumber(number)
@@ -103,7 +103,7 @@ public class OldCheckout extends TestBase {
 
         header.openBasket();
 
-        basket.checkout();
+        basket.clickCheckout();
 
         oldCheckout.setFIO(lastName, firstName, middleName)
                 .setNumber(number)

@@ -14,7 +14,7 @@ public class BasketPages {
 
     @Step("Нажамаем оформить заказ")
 
-    public BasketPages checkout() {
+    public BasketPages clickCheckout() {
         checkoutButton.click();
         return this;
     }
