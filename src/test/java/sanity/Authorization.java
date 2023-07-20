@@ -6,6 +6,8 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import pages.HeaderPages;
 
+import static com.codeborne.selenide.Condition.visible;
+
 @Tag("sanity")
 @Tags({
         @Tag("sanity"),
@@ -28,6 +30,7 @@ public class Authorization extends TestBase {
                 .clickLoginEmail();
         header.clickMyProfile();
         myProfile.verify("Заказ");
+
 
     }
 

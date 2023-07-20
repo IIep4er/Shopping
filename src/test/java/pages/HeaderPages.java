@@ -32,9 +32,15 @@ public class HeaderPages {
     @Step("Переходим в мой профиль")
 
     public HeaderPages clickMyProfile() {
-        userMenu.hover();
+        userMenu.shouldBe(visible).hover();
         profileDropDown.shouldBe(visible);
         $(By.linkText("Мой профиль")).click();
+        return this;
+    }
+    @Step("Проверяем, что успешно авторизовались")
+
+    public HeaderPages checkLoggedIn() {
+        userMenu.shouldBe(visible);
         return this;
     }
 

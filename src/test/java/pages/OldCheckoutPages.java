@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class OldCheckoutPages {
-    private SelenideElement
+    public SelenideElement
 
             lastNameInput = $("[name=\"lastName\"]"),
             firstNameInput = $("[name=\"firstName\"]"),
