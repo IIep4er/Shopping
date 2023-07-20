@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ProductCardPages {
 
-    @Step("Нажамаем кнопку В корзину ")
+    @Step("Нажамаем кнопку В корзину ") //todo вынести в сселениде элемент
     public ProductCardPages addToBasket() {
         $("[data-js=\"button-add-to-cart-block\"]").$(byText("В корзину")).shouldHave(visible);
         $("[data-js=\"button-add-to-cart-block\"]").click();

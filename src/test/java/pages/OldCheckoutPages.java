@@ -32,9 +32,9 @@ public class OldCheckoutPages {
             createOrder = $("[data-js=\"button-apply-order\"]"),
             selectPickPoint = $(".point-map"),
             paymentPopUp = $(".header-component__text"),
-            setNumberCard = $("[name=\"card\"]"),
-            setDateCard= $("[name=\"date\"]"),
-            setCVV = $("[name=\"cvv\"]"),
+            setNumberCard = $("input[name=\"card\"]"),
+            setDateCard= $("input[name=\"date\"]"),
+            setCVV = $("input[name=\"cvv\"]"),
             paymentEmail = $("#email[name=\"email\"]"),
             pay = $(".confirm-button");
 
@@ -129,14 +129,14 @@ public class OldCheckoutPages {
     @Step("Заполняем информацию для оплаты")
 
     public OldCheckoutPages setPaymentInfo(String numberCard, String dateCard, String cvv, String email) {
-        paymentPopUp.shouldHave(visible);
+        paymentPopUp.shouldBe(visible);
         setNumberCard.setValue(numberCard);
         setDateCard.setValue(dateCard);
         setCVV.setValue(cvv);
-        paymentEmail.shouldBe(text(email));
+        paymentEmail.shouldHave(text(email));
         pay.click();
         $(".repeat-action").click();
-        $(".progress").shouldBe(text("Платёж завершён"));
+        $(".progress").shouldHave(text("Платёж завершён"));
         $(".actions .action").click();
         return this;
     }
@@ -151,7 +151,7 @@ public class OldCheckoutPages {
     @Step("Проверяем, что заказ создан") //todo вынести в отдельный ThanksPage
 
     public OldCheckoutPages orderCreationCheck() {
-        $(By.cssSelector(".heading")).shouldBe(text("Отлично! Заказ создан"));  // todo придумать название и вынести в селенид элемент
+        $(By.cssSelector(".heading")).shouldHave(text("Отлично! Заказ создан"));  // todo придумать название и вынести в селенид элемент
         return this;
     }
 
