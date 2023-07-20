@@ -1,0 +1,88 @@
+[2023-07-20T14:54:26.847Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/c/dlya-zhenshchin - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:54:26.850Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:54:26.850Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:26.866Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')
+[2023-07-20T14:54:30.406Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/c/dlya-zhenshchin - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:54:30.408Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:54:30.408Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:30.684Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')
+[2023-07-20T14:54:35.140Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/p/pulover-175020?code=175020001 - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:54:35.144Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:54:35.144Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:35.160Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')
+[2023-07-20T14:54:39.493Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/cart - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:54:39.494Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:54:39.495Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:39.495Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')
+[2023-07-20T14:54:41.124Z] [SEVERE] https://iclicks.io/js/687/conversion-tracking.js?v=3 0:2658 Uncaught TypeError: Cannot read properties of undefined (reading 'value')
+[2023-07-20T14:54:43.174Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/cart/checkout - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:54:43.175Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:54:43.175Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:43.197Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')
+[2023-07-20T14:54:45.388Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/_ui/custom/CheckoutPage.js 1 Pattern attribute value ^[а-яёА-ЯЁ]+-[а-яёА-ЯЁ]+|[а-яёА-ЯЁ]+|[-]$ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /^[а-яёА-ЯЁ]+-[а-яёА-ЯЁ]+|[а-яёА-ЯЁ]+|[-]$/v: Invalid character in character class
+[2023-07-20T14:54:56.396Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/cart/checkout - Access to XMLHttpRequest at 'https://iclicks.io/js/conversion-tracker-pixel.png' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://www.shoppinglive.ru' that is not equal to the supplied origin.
+[2023-07-20T14:54:56.396Z] [SEVERE] https://iclicks.io/js/conversion-tracker-pixel.png - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:58.119Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/cart/checkout/thank-message-page?orderNumber=261013589 - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:54:58.121Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:54:58.122Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:54:58.224Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')

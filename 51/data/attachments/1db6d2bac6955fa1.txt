@@ -1,0 +1,16 @@
+[2023-07-20T14:55:01.989Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/ - Access to XMLHttpRequest at 'https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds' from origin 'https://www-hybris-dev-02.shoppinglive.ru' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2023-07-20T14:55:01.991Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:863155 TypeError: Cannot read properties of null (reading 'find')
+    at t.value (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:1139194)
+    at Ui (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850676)
+    at qi (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:850471)
+    at ks (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:885969)
+    at yl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877443)
+    at ml (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:877368)
+    at sl (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:874398)
+    at https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:826146
+    at t.unstable_runWithPriority (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:901028)
+    at Go (https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js:2:825855)
+[2023-07-20T14:55:01.991Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/api//v2/UserProfile/GetUserProfilesByIds - Failed to load resource: net::ERR_FAILED
+[2023-07-20T14:55:02.017Z] [SEVERE] https://shoppinglive.sherlockcrm.ru/API/scripts/ChatPlatform/chatBot.js 1:1139193 Uncaught TypeError: Cannot read properties of null (reading 'find')
+[2023-07-20T14:55:02.562Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/medias/sys_master/root/h4c/h84/9371237023774/23.03.29-m-banner-big-size.bin - Failed to load resource: the server responded with a status of 404 ()
+[2023-07-20T14:55:02.641Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/medias/sys_master/root/h56/he6/9378020818974/23.04.04-m-banner-day-.bin - Failed to load resource: the server responded with a status of 404 ()
