@@ -1,6 +1,7 @@
 package sanity;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -101,8 +102,8 @@ public class OldCheckout extends TestBase {
                 .setDeliveryMethodCourier()
                 .setAddress(address)
                 .setPaymentModeCard()
-                .createOrder()
-                .setPaymentInfo(numberCard, dateCard, CVV, email)
+                .createOrder();
+        oldCheckout.setPaymentInfo(numberCard, dateCard, CVV, email)
                 .orderCreationCheck()
                 .takeScreenshot();
 

@@ -129,8 +129,8 @@ public class OldCheckoutPages {
     @Step("Заполняем информацию для оплаты")
 
     public OldCheckoutPages setPaymentInfo(String numberCard, String dateCard, String cvv, String email) {
-        paymentPopUp.shouldBe(visible);
-        setNumberCard.setValue(numberCard);
+        //paymentPopUp.shouldHave(text("Аванс за заказ"));
+        setNumberCard.shouldBe(visible).click();//setValue(numberCard);
         setDateCard.setValue(dateCard);
         setCVV.setValue(cvv);
         paymentEmail.shouldHave(text(email));
