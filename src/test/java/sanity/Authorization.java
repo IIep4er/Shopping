@@ -8,7 +8,6 @@ import pages.HeaderPages;
 
 import static com.codeborne.selenide.Condition.visible;
 
-@Tag("sanity")
 @Tags({
         @Tag("sanity"),
         @Tag("authorization")})
