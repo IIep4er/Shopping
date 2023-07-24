@@ -1,0 +1,2 @@
+[2023-07-24T09:37:01.273Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/ - Failed to load resource: the server responded with a status of 404 ()
+[2023-07-24T09:37:01.431Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
