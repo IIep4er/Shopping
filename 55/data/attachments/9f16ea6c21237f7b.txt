@@ -1,0 +1,3 @@
+[2023-07-24T09:42:12.854Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/_ui/custom/img/logo.svg - Failed to load resource: the server responded with a status of 404 ()
+[2023-07-24T09:42:13.551Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/_ui/custom/img/logo.svg - Failed to load resource: the server responded with a status of 404 ()
+[2023-07-24T09:42:13.954Z] [SEVERE] https://www-hybris-dev-02.shoppinglive.ru/c/dlya-zhenshchin - Failed to load resource: the server responded with a status of 404 ()
